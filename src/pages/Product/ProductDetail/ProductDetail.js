@@ -11,7 +11,6 @@ export default function ProductDetail() {
 
   return (
     <SafeAreaView style={styles.container}>
-      <Text>product Detail</Text>
       <ScrollView>
         <Image
           style={styles.image}

@@ -13,11 +13,10 @@ export default function Products() {
 
   const renderProduct = ({item}) => (
     <ProductCard item={item} onSelect={() => navigate(item)} />
-  )
+  );
 
   return (
     <SafeAreaView>
-      <Text>Producttt</Text>
       <FlatList
         data={mockData.products}
         renderItem={renderProduct}

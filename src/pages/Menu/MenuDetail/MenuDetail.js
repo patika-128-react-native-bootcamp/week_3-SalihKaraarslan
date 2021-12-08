@@ -10,7 +10,7 @@ export default function MenuDetail() {
 
   const renderIngredients = item => {
     return (
-      <View style={styles.badge_container}>
+      <View key={fd.id} style={styles.badge_container}>
         <Text style={styles.badge_label}>{item}</Text>
       </View>
     );

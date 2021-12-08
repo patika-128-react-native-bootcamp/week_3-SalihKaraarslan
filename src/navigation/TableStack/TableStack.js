@@ -19,7 +19,7 @@ export default function TableStack() {
           },
           headerBackTitleVisible: false,
           headerTitle: 'Tables',
-        }} 
+        }}
       />
       <Stack.Screen
         name="TableUpdatePage"

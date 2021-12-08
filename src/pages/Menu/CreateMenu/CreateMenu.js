@@ -18,10 +18,11 @@ export default function CreateMenu() {
 
   function handleNavigateDetail() {
     const fd = {
-      name: name,
-      description: description,
-      ingredients: ingredients,
-      price: price,
+      id: Date.now(),
+      name,
+      description,
+      ingredients,
+      price,
     };
 
     navigation.navigate('MenuDetailPage', {fd});

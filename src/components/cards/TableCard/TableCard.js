@@ -1,6 +1,6 @@
 import React from 'react';
 import {View, Text, TouchableWithoutFeedback} from 'react-native';
-import styles from './TableCard.styles'
+import styles from './TableCard.styles';
 
 export default function TableCard({item, onSelect}) {
   const tableColor = item.isActive ? 'green' : '#bdbdbd';

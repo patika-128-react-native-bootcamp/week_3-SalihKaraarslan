@@ -1,7 +1,6 @@
 import React from 'react';
 import {View, TextInput, Text} from 'react-native';
-import styles from './Input.styles'
-
+import styles from './Input.styles';
 
 export default function Input({label, ...otherProps}) {
   return (

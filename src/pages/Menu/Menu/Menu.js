@@ -20,7 +20,6 @@ export default function Menu() {
 
   return (
     <View style={styles.container}>
-      <Text>Menu</Text>
       <SafeAreaView style={styles.container}>
         <View>
           <FlatList data={mockData.menu} renderItem={renderMenu} />

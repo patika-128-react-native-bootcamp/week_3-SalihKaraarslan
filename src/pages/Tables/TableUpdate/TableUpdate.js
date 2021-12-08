@@ -12,16 +12,16 @@ const mapOrders = (order, i) => (
       {order.price} TL
     </Text>
   </View>
-); 
+);
 
 export default function TableUpdate() {
   const navigation = useNavigation();
   const route = useRoute();
   const {table} = route.params;
 
-  const {price: total} = table.orders.reduce((p, c) => ({
-    price: p.price + c.price,
-  }));
+  const newArray = table.orders.map(a => a.price);
+
+  const total = newArray.reduce((p, c) => p + c, 0);
 
   function handleCloseTable() {
     navigation.navigate('TablesPage', {
@@ -33,7 +33,7 @@ export default function TableUpdate() {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <Text style={styles.name_label}>{table.name}</Text>
-        {table.orders.length>0 && table.orders.map(mapOrders)}
+        {table.orders.map(mapOrders)}
         <Text style={styles.total}>Total {total} TL</Text>
       </View>
       {table.isActive && (

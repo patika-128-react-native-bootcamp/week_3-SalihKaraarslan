@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native";
+import {StyleSheet} from 'react-native';
 import spacing from '../../styles/spacing';
 import radius from '../../styles/radius';
 
