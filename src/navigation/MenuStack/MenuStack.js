@@ -7,7 +7,7 @@ import CreateMenu from '../../pages/Menu/CreateMenu';
 
 const Stack = createNativeStackNavigator();
 
-export default function MenuStck() {
+export default function MenuStack() {
   return (
     <Stack.Navigator>
       <Stack.Screen

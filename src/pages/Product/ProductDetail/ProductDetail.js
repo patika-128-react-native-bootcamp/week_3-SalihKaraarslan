@@ -11,6 +11,7 @@ export default function ProductDetail() {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Text>product Detail</Text>
       <ScrollView>
         <Image
           style={styles.image}
@@ -25,7 +26,7 @@ export default function ProductDetail() {
         <ScrollView horizontal bounces={false}>
           {product.ingredients.map((ing, ind) => {
             return (
-              <View style={styles.badge_container}>
+              <View key={ind} style={styles.badge_container}>
                 <Text style={styles.badge_label}>{ing}</Text>
               </View>
             );

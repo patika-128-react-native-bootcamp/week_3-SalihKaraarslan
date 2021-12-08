@@ -4,7 +4,7 @@ import {SafeAreaView, FlatList} from 'react-native';
 
 import styles from './Tables.styles';
 import TableCard from '../../../components/cards/TableCard';
-import mock_data from '../../../MOCK_DATA.json';
+import mock_data from '../../../MOCK_DATA.json'; 
 
 export default function Table() {
   const route = useRoute();

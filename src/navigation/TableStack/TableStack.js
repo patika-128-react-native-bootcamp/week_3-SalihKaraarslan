@@ -18,8 +18,8 @@ export default function TableStack() {
             fontWeight: '300',
           },
           headerBackTitleVisible: false,
-          headerTitle: 'Menu',
-        }}
+          headerTitle: 'Tables',
+        }} 
       />
       <Stack.Screen
         name="TableUpdatePage"
@@ -30,7 +30,7 @@ export default function TableStack() {
             fontWeight: '300',
           },
           headerBackTitleVisible: false,
-          headerTitle: 'Menu',
+          headerTitle: 'TableUpdate',
         }}
       />
     </Stack.Navigator>

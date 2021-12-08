@@ -12,7 +12,7 @@ const mapOrders = (order, i) => (
       {order.price} TL
     </Text>
   </View>
-);
+); 
 
 export default function TableUpdate() {
   const navigation = useNavigation();
@@ -33,7 +33,7 @@ export default function TableUpdate() {
     <SafeAreaView style={styles.container}>
       <View style={styles.container}>
         <Text style={styles.name_label}>{table.name}</Text>
-        {table.orders.map(mapOrders)}
+        {table.orders.length>0 && table.orders.map(mapOrders)}
         <Text style={styles.total}>Total {total} TL</Text>
       </View>
       {table.isActive && (
