@@ -1,5 +1,5 @@
 import React from 'react';
-import {SafeAreaView, FlatList, View} from 'react-native';
+import {SafeAreaView, FlatList, View, Text} from 'react-native';
 import {useNavigation} from '@react-navigation/core';
 
 import styles from './Menu.styles';

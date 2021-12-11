@@ -19,9 +19,9 @@ export default function TableUpdate() {
   const route = useRoute();
   const {table} = route.params;
 
-  const {price: total} = table.orders.reduce((p, c) => ({
-    price: p.price + c.price,
-  }));
+  const newArray = table.orders.map(a => a.price);
+
+  const total = newArray.reduce((p, c) => p + c, 0);
 
   function handleCloseTable() {
     navigation.navigate('TablesPage', {
